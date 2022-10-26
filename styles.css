@@ -1,5 +1,9 @@
+* {
+  border: 1px solid rgb(109, 156, 162)
+}
 body {
   margin: 0% 0% 0% 0%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 button {
@@ -24,6 +28,15 @@ h1 {
 
 h2 {
   color: rgb(56,56,56);
+}
+
+img{
+  width:100%;
+  max-width:20%;
+}
+
+.container--cards {
+  box-shadow: 11% 11% 1% 1%  grey;
 }
 
 .menu--admin-user {
