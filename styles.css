@@ -1,0 +1,33 @@
+body {
+  margin: 0% 0% 0% 0%;
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-size: 3vh;
+  color: rgb(175, 174, 174);
+  margin: 0% 0% 2% 5%;
+}
+
+header {
+  background-color: rgb(56, 56, 56);
+  padding-top: 1%;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
+h2 {
+  color: rgb(56,56,56);
+}
+
+.menu--admin-user {
+  display: flex;
+  justify-content: flex-end;
+}
+
