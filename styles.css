@@ -24,6 +24,7 @@ h1 {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
+  padding-right: 2%;
 }
 
 h2 {
@@ -48,6 +49,9 @@ img{
 .menu--admin-user {
   display: flex;
   justify-content: flex-end;
+  color: blue;
+  padding-right: 3%;
+  font-size: 3vh;
 }
 
 .section--recipient-card {
