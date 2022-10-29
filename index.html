@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,22 +9,32 @@
   <!-- <link rel='icon' href='../assets/cooking.png'> -->
   <title>Static Comp</title>
 </head>
+
 <body>
   <header>
     <!-- maybe wrap both of these in a container -->
     <!-- might have to change this p-tag -->
-    <p class="menu--admin-user"><i class="fa-regular fa-circle-user"></i> Admin Username <i class="fa-solid fa-caret-down"></i></p>
-    <h1>2Win!<i class="fa-solid fa-bolt"></i></h1>
+    <div class="card--admin">
+      <p class="menu--admin-user"><i class="fa-regular fa-circle-user"></i> Admin Username <i
+          class="fa-solid fa-caret-down"></i></p>
+          <h1>2Win!<i class="fa-solid fa-bolt"></i></h1>
+    </div>
     <nav class="section--nav">
-      <button><i class="fa-solid fa-share-nodes"></i>  SHARES</button>
-      <button><i class="fa-solid fa-list"></i>  PLAYLISTS</button>
-      <button><i class="fa-solid fa-video"></i></i>  PERSONAL VIDEOS</button>
+      <button><i class="fa-solid fa-share-nodes"></i> SHARES</button>
+      <button><i class="fa-solid fa-list"></i> PLAYLISTS</button>
+      <button><i class="fa-solid fa-video"></i></i> PERSONAL VIDEOS</button>
     </nav>
   </header>
   <h2>Shares</h2>
   <container class="container--cards">
     <section class="section--recipient-card">
-      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
+      <!-- this might need to go inside of an img container to get the layering correct -->
+      <container class="container--images">
+        <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
+        <container class="icon--top-left"><i class="fa-solid fa-share-from-square">Share Arrow</i></container>
+      </container>
+
+
       <h4>Recipients Name Here </h4>
       <p>Wednesday 10/26/2022 10:22 a.m.</p>
       <!-- might need to wrap the url in a container -->
@@ -43,43 +54,8 @@
       <h5>Playlist</h5>
       <h6>Name of Playlist</h6>
       <p>Attachments</p>
-    </section>    <section class="section--recipient-card">
-      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
-      <h4>Recipients Name Here </h4>
-      <p>Wednesday 10/26/2022 10:22 a.m.</p>
-      <!-- might need to wrap the url in a container -->
-      <p>https://wwww.example.com/user</p>
-      <h5>Playlist</h5>
-      <h6>Name of Playlist</h6>
-      <p>Attachments</p>
-    </section>    <section class="section--recipient-card">
-      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
-      <h4>Recipients Name Here </h4>
-      <p>Wednesday 10/26/2022 10:22 a.m.</p>
-      <!-- might need to wrap the url in a container -->
-      <p>https://wwww.example.com/user</p>
-      <h5>Playlist</h5>
-      <h6>Name of Playlist</h6>
-      <p>Attachments</p>
-    </section>    <section class="section--recipient-card">
-      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
-      <h4>Recipients Name Here </h4>
-      <p>Wednesday 10/26/2022 10:22 a.m.</p>
-      <!-- might need to wrap the url in a container -->
-      <p>https://wwww.example.com/user</p>
-      <h5>Playlist</h5>
-      <h6>Name of Playlist</h6>
-      <p>Attachments</p>
-    </section>    <section class="section--recipient-card">
-      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
-      <h4>Recipients Name Here </h4>
-      <p>Wednesday 10/26/2022 10:22 a.m.</p>
-      <!-- might need to wrap the url in a container -->
-      <p>https://wwww.example.com/user</p>
-      <h5>Playlist</h5>
-      <h6>Name of Playlist</h6>
-      <p>Attachments</p>
-    </section>    <section class="section--recipient-card">
+    </section>
+    <section class="section--recipient-card">
       <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
       <h4>Recipients Name Here </h4>
       <p>Wednesday 10/26/2022 10:22 a.m.</p>
@@ -89,19 +65,61 @@
       <h6>Name of Playlist</h6>
       <p>Attachments</p>
     </section>
-  </section>    <section class="section--recipient-card">
-    <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
-    <h4>Recipients Name Here </h4>
-    <p>Wednesday 10/26/2022 10:22 a.m.</p>
-    <!-- might need to wrap the url in a container -->
-    <p>https://wwww.example.com/user</p>
-    <h5>Playlist</h5>
-    <h6>Name of Playlist</h6>
-    <p>Attachments</p>
-  </section>
+    <section class="section--recipient-card">
+      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
+      <h4>Recipients Name Here </h4>
+      <p>Wednesday 10/26/2022 10:22 a.m.</p>
+      <!-- might need to wrap the url in a container -->
+      <p>https://wwww.example.com/user</p>
+      <h5>Playlist</h5>
+      <h6>Name of Playlist</h6>
+      <p>Attachments</p>
+    </section>
+    <section class="section--recipient-card">
+      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
+      <h4>Recipients Name Here </h4>
+      <p>Wednesday 10/26/2022 10:22 a.m.</p>
+      <!-- might need to wrap the url in a container -->
+      <p>https://wwww.example.com/user</p>
+      <h5>Playlist</h5>
+      <h6>Name of Playlist</h6>
+      <p>Attachments</p>
+    </section>
+    <section class="section--recipient-card">
+      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
+      <h4>Recipients Name Here </h4>
+      <p>Wednesday 10/26/2022 10:22 a.m.</p>
+      <!-- might need to wrap the url in a container -->
+      <p>https://wwww.example.com/user</p>
+      <h5>Playlist</h5>
+      <h6>Name of Playlist</h6>
+      <p>Attachments</p>
+    </section>
+    <section class="section--recipient-card">
+      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
+      <h4>Recipients Name Here </h4>
+      <p>Wednesday 10/26/2022 10:22 a.m.</p>
+      <!-- might need to wrap the url in a container -->
+      <p>https://wwww.example.com/user</p>
+      <h5>Playlist</h5>
+      <h6>Name of Playlist</h6>
+      <p>Attachments</p>
+    </section>
+    </section>
+    <section class="section--recipient-card">
+      <img src="./assets/pexels-andrea-piacquadio-3778680.jpg">
+      <h4>Recipients Name Here </h4>
+      <p>Wednesday 10/26/2022 10:22 a.m.</p>
+      <!-- might need to wrap the url in a container -->
+      <p>https://wwww.example.com/user</p>
+      <h5>Playlist</h5>
+      <h6>Name of Playlist</h6>
+      <p>Attachments</p>
+    </section>
 
 
     <!-- redo these once the layout looks okay -->
   </container>
 </body>
+
 </html>
