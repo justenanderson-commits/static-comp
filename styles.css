@@ -4,6 +4,7 @@
 body {
   margin: 0% 0% 0% 0%;
   font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(233, 224, 218);
 }
 
 button {
@@ -41,9 +42,25 @@ h1 {
 
 h2 {
   color: rgb(56,56,56);
-  font-size: 5vh;
+  font-size: 6vh;
   padding: 1%;
 }
+
+h3 {
+  color:rgb(20, 186, 223)
+}
+
+h4 {
+  margin: 2% 0% 0% 0%;
+  font-size: 3vh;
+}
+
+p{
+  margin-bottom: -0%;
+  font-size: 2vh;
+}
+
+
 
 img{
   width:100%;
@@ -57,26 +74,35 @@ img{
 }
 
 .container--cards {
-  display: flex;
   display: grid;
   flex-basis: auto;
   grid-template-columns: auto auto auto auto;
-  background-color: #2196F3;
+  /* background-color: #2196F3; */
   padding: 10px;
   margin: 1%;
-
 }
 
-.container--images {
+.container--card-image {
   position: relative;
   text-align: center;
   color: white;
 }
 
+.container--card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding: -10%; */
+}
+
 .icon--top-left {
   position: absolute;
+  font-size: 100%;
   bottom: 100%;
   left: 10%;
+  padding: 4%;
+  border-radius: 10px;
+  background-color:rgba(0, 0, 0, 0.8)
 }
 
 .menu--admin-user {
@@ -94,5 +120,7 @@ img{
   font-size: 30px;
   text-align: center;
   box-shadow: 11% 11% 1% 1%  grey;
+  width: 85%;
+  height: 90%;
 }
 
