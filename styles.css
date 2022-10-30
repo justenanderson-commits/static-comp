@@ -1,18 +1,16 @@
-/* * {
-  border: 1px solid rgb(109, 156, 162) */
-/* } */
 body {
   margin: 0% 0% 0% 0%;
   font-family:Arial, Helvetica, sans-serif;
   background-color: rgb(233, 224, 218);
+  max-width: fit-content;
 }
 
 button {
   border: none;
   background: transparent;
-  font-size: 3vh;
+  font-size: 2.5vh;
   color: rgb(175, 174, 174);
-  margin: 0% 0% 2% 5%;
+  margin: 0% 0% 2% 3%;
 }
 
 button:hover {
@@ -23,7 +21,7 @@ button:hover {
 button:focus {
   outline-color: transparent;
   outline-style:solid;
-  box-shadow: 0 0 0 4px blue
+  box-shadow: 0 0 0 4px rgb(255, 251, 0)
 }
 
 header {
@@ -34,7 +32,7 @@ header {
 h1 {
   color: white;
   font-weight: bold;
-  font-size: 10vh;;
+  font-size: 7vh;;
   padding-right: 2%;
   margin-bottom: -2%;
 
@@ -47,6 +45,7 @@ h2 {
 }
 
 h3 {
+  margin-top: -0%;
   color:rgb(20, 186, 223)
 }
 
@@ -60,10 +59,14 @@ p{
   font-size: 2vh;
 }
 
-
-
 img{
   width:100%;
+  opacity: 0.7;
+}
+
+img:hover {
+  opacity: 1.0;
+  cursor: pointer;
 }
 
 .card--admin {
@@ -71,13 +74,13 @@ img{
   align-content: flex-end;
   flex-direction: column;
   align-items: flex-end;
+  margin-top: -1%;
 }
 
 .container--cards {
   display: grid;
   flex-basis: auto;
   grid-template-columns: auto auto auto auto;
-  /* background-color: #2196F3; */
   padding: 10px;
   margin: 1%;
 }
@@ -89,13 +92,36 @@ img{
 }
 
 .container--card-info {
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* padding: -10%; */
+  padding-left: 2%;
+  margin: -2% 0% 22% 0%;
 }
 
-.icon--top-left {
+.container--recipient-card {
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 1px 1px 10px rgb(135, 134, 134);
+  width: 85%;
+  height: 90%;
+}
+
+.container---url {
+  background-color: rgb(227, 227, 227);
+  padding-bottom: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.container---url:hover, .icon--bottom-left {
+  cursor: pointer;
+}
+
+.icon--bottom-left {
   position: absolute;
   font-size: 100%;
   bottom: 100%;
@@ -105,22 +131,28 @@ img{
   background-color:rgba(0, 0, 0, 0.8)
 }
 
+.image-text--top-right {
+  position: relative;
+  font-size: 100%;
+  bottom: 42%;
+  left: 32%;
+  padding: 4%;
+  color: white;
+  text-shadow: 2px 2px 3px #4c4c4c;
+}
+
 .menu--admin-user {
   display: flex;
   justify-content: flex-end;
-  color: blue;
+  color: rgb(255, 221, 0);
   padding-right: 3%;
   font-size: 3vh;
 }
 
 .section--recipient-card {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
   font-size: 30px;
   text-align: center;
-  box-shadow: 11% 11% 1% 1%  grey;
+  box-shadow: 1px 1px 10px rgb(135, 134, 134);
   width: 85%;
   height: 90%;
-}
-
+} 
